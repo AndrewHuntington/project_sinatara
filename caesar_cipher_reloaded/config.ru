@@ -1,2 +1,2 @@
-require 'cc_reloaded.rb'
+require './cc_reloaded'
 run Sinatra::Application
