@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher Reloaded</title>
+  </head>
+  <body>
+    <form method="post">
+      <fieldset>
+        <legend>The Caesar Cipher</legend>
+        <label for="message">Enter a message to encrypt:</label><br>
+        <textarea name="message" id="message" rows="8" cols="30"></textarea><br>
+        <label for="encryption_key">Enter an encryption key (1-25): </label><br>
+        <input type="number" name="number" id="encryption_key"><br>
+        <input type="submit" value="Encrypt!">
+      </fieldset>
+    </form><br>
+    <% unless @message.nil? || @num.nil? %>
+      <fieldset>
+        <legend>Your Encypted Message:</legend>
+          <p><%= @cc_message %></p>
+      </fieldset>
+
+    <% end %>
+  </body>
+
+</html>
