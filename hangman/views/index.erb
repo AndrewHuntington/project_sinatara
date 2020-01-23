@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Word Guessing Game</title>
+  </head>
+  <body>
+    <form>
+      <p>You have <%= @tries %> tries left.</p>
+      <label for="guess_box">Guess a letter:</label><br>
+      <input type="text" name="guess" id="guess_box"><br>
+      <input type="submit" value="Guess!">
+    </form>
+  </body>
+</html>
